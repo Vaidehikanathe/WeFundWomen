@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="create_proj.css">
+</head>
+
+<body>
+
+
+
+
+    
+    <div class="first">
+        <div class="box">
+            <div class="center">Create new project</div>
+            <form id="register" div class="input">
+                <!-- <div class="center">Register</div> -->
+                <form id="register" div class="input">
+                    <div class="name">Title of Project</div>
+                    <input type="text" class="input_field" placeholder="Title" required>
+
+                    <div class="country">Description of Project</div>
+                    <!-- <input type="text" class="input_field" placeholder="Select your Country" required> -->
+                    
+                    <textarea name="Description" class="input_field" placeholder="Description"></textarea>
+
+                    <div class="currency">Start Date</div>
+                    <input type="date" class="input_field" required>
+
+                    <div class="comp-category">End Date</div>
+                    <input type="date" class="input_field" required>
+
+                    <div class="currency">Amount to be raised</div>
+                    <input type="number" class="input_field" placeholder="Enter Amount in Rupees" required>
+
+               
+
+                    <button type="submit" class="submit_btn"><a href="eunt_projects.html">submit</a></button>
+
+                </form>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script>
+        const loginText = document.querySelector(".title-text .login");
+        const loginForm = document.querySelector("form.login");
+        const loginBtn = document.querySelector("label.login");
+        const signupBtn = document.querySelector("label.signup");
+        const signupLink = document.querySelector("form .signup-link a");
+        signupBtn.onclick = (() => {
+            loginForm.style.marginLeft = "-50%";
+            loginText.style.marginLeft = "-50%";
+        });
+        loginBtn.onclick = (() => {
+            loginForm.style.marginLeft = "0%";
+            loginText.style.marginLeft = "0%";
+        });
+        signupLink.onclick = (() => {
+            signupBtn.click();
+            return false;
+        });
+    </script>
+</body>
+
+</html>

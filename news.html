@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="news.css">
+    <title>News Section</title>
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="logo"><img src="logo.jpeg"></a>
+            <div class="nav-links">
+                <a href="index.html" class="fill">home</a>
+                <a href="news.html" class="fill">News</a>
+                <a href="inv_login.html" class="fill">Invester login</a>
+                <a href="entre_login.html" class="fill">Entrepreneur login</a>
+                <a href="contact.html" class="fill">contact</a>
+                <div class="toggle-menu scale-effect">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="toggle-menu scale-effect">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <div class="container my-3">
+        <h3><span class="badge badge-secondary">Top News</span></h3>
+        <hr>
+        <div class="accordion" id="newsAccordian">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            How Covid-fueled crowdfunding can revive small businesses
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        A pandemic-fueled boom in crowdfunding has small businesses flocking to capital-raising
+                        platforms that experts say could help many companies get back to normal as long as
+                        small-business owners are able to launch effective campaigns.<br>
+                        Regulation crowdfunding, in which companies raise capital from investors via
+                        government-monitored online platforms, has mushroomed in the last two years, going from
+                        approximately $100 million in 2019 to over $200 million in 2020, according to Chris Lustrino,
+                        founder and CEO of crowdfunding analytics and ratings firm KingsCrowd. It's already exceeded the
+                        $200 million mark year to date in 2021, he adds. <br>
+                        <a
+                            href="https://www.business-standard.com/article/current-affairs/how-covid-fueled-crowdfunding-can-revive-small-businesses-121070101528_1.html">Read
+                            more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo">
+                            Internet seer: Former Buddhist monk preps IPO for crowdfunding startup
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        Campfire helps individuals and small groups raise funds online, making it the biggest such
+                        business in Japan.<br>
+                        Campfire Inc., which helps individuals and small groups raise funds online, is seeking to list
+                        shares this year at a valuation of as much as 200 billion yen ($1.8 billion), Ieiri said in an
+                        interview. It’s a long-anticipated IPO for the popular crowdfunding operator, the biggest such
+                        business in Japan. Ieiri, 42, is one of a growing number of chief executive.<br>
+                        <a href="https://www.business-standard.com/article/companies/japan-s-recluse-buddhist-monk-targets-ipo-for-his-crowdfunding-startup-121062500255_1.html">Read
+                            more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">
+                            Is crowdfunding the answer to sharp investing in real estate?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        Real estate crowdfunding is a way of investing where a pool of individuals contribute a small
+                        amount of capital towards a specific real estate deal. The process is usually conducted through
+                        an online platform to reach an audience of potential investors.<br>
+                        For developers, crowdfunding offers them access to capital for a real estate development
+                        project. This approach has become a feasible alternative to traditional ways of raising
+                        capital.As for the investors, it offers them the ability to become a shareholder in assets they may
+                        never be able to acquire as individuals.<br>
+                        <a href="https://www.moneycontrol.com/news/business/real-estate/is-crowdfunding-the-answer-to-sharp-investing-in-real-estate-5630781.html">Read more</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script src="news.js"></script>
+</body>
+
+</html>

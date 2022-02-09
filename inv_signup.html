@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="inv_reg.css">
+</head>
+
+<body>
+ 
+
+
+    <div class="first">
+        <div class="box">
+            <div class="center">Register</div>
+            <form id="register" div class="input">
+                <!-- <div class="center">Register</div> -->
+                <form id="register" div class="input">
+                    <div class="name">Enter Full Name</div>
+                    <input type="text" class="input_field" placeholder="Name" required>
+                    <div class="country">Country of residence</div>
+                    <input type="text" class="input_field" placeholder="Select your Country" required>
+                    <div class="company-info">
+                        <div class="comp-category">Are you a Company or an Individual?</div>
+                        <div class="companyorInd">
+                            <div class="companyorInd">
+                                <input type="radio" class="radio" id="company" name="comp-category" />
+                                <label for="companyorInd">Company</label>
+                                <!-- <div class="company-reg">
+                                    <div class="ifselectcomp">
+                                        <input type="text" class="ifselectcomp" placeholder="Company Name" required>
+
+                                        <input type="text" class="ifselectcomp" placeholder="Company Location" required>
+
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div class="companyorInd">
+                                <input type="radio" class="radio" id="Individual" name="comp-category" />
+                                <label for="companyorInd">Individual</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category">What are you looking to invest for?</div>
+                    <div class="container">
+                        <div class="select-box">
+
+                            <div class="options-container">
+
+                                <div class="option">
+                                    <input type="radio" class="radio" id="education" name="category" />
+                                    <label for="education">Education & Learning</label>
+                                </div>
+                                <!-- <div class="option">
+                                    <input type="radio" class="radio" id="dreams" name="category" />
+                                    <label for="dreams">Dreams, Hopes and Wishes</label>
+                                </div> -->
+                                <div class="option">
+                                    <input type="radio" class="radio" id="animals" name="category" />
+                                    <label for="animals">Animals & Pets</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="radio" id="creative" name="category" />
+                                    <label for="creative">Music & Film</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="radio" id="travel" name="category" />
+                                    <label for="travel">Travel & Adventure</label>
+                                </div>
+
+                                <div class="option">
+                                    <input type="radio" class="radio" id="medical" name="category" />
+                                    <label for="medical">Medical</label>
+                                </div>
+
+                                <div class="option">
+                                    <input type="radio" class="radio" id="weddings" name="category" />
+                                    <label for="weddings">Weddings & Honeymoon</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="radio" id="competitions" name="category" />
+                                    <label for="competitions">Competitions & Pageants</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="radio" id="business" name="category" />
+                                    <label for="business">Business & Entrepreneurs</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="radio" id="volunteer" name="category" />
+                                    <label for="volunteer">Volunteer & Service</label>
+                                </div>
+
+                            </div>
+                            <div class="selected">Choose a Category</div>
+                        </div>
+
+                    </div>
+                    <!-- <div class="currency">How much fund would you like to raise?</div>
+                    <input type="number" class="input_field" placeholder="Enter Goal Amount in Rupees" required> -->
+
+                    <button type="submit" class="submit_btn"><a href="project.html" >Register</a></button>
+                    
+
+                </form>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script>
+        const loginText = document.querySelector(".title-text .login");
+        const loginForm = document.querySelector("form.login");
+        const loginBtn = document.querySelector("label.login");
+        const signupBtn = document.querySelector("label.signup");
+        const signupLink = document.querySelector("form .signup-link a");
+        signupBtn.onclick = (() => {
+           loginForm.style.marginLeft = "-50%";
+           loginText.style.marginLeft = "-50%";
+        });
+        loginBtn.onclick = (() => {
+           loginForm.style.marginLeft = "0%";
+           loginText.style.marginLeft = "0%";
+        });
+        signupLink.onclick = (() => {
+           signupBtn.click();
+           return false;
+        });
+     </script>
+</body>
+
+</html>
